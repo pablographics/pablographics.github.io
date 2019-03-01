@@ -1,0 +1,55 @@
+header{
+	margin-top: 10px;
+	margin-bottom: 15px;
+	overflow: hidden;
+	
+	.logo{
+		float: left;
+	}
+	.logo a{
+		float:left;
+		color: #222;
+		display: block;
+		padding: 10px 15px;
+		font-weight: bold;
+		font-size:20px;
+		font-family: 'Roboto',sans-serif;
+	}
+
+	nav{
+		float: right;
+
+
+		ul li{
+			display: inline-block;
+
+			a{
+				padding: 15px;
+				display: block;
+				font-family: 'Roboto',sans-serif;
+				color: #777;
+				font-size: 14px;
+				font-weight: 600;
+				margin-right: 10px;
+				@include ease;
+
+				&:hover{
+					color: $primary-color;
+				}
+			}
+		}
+	}
+
+
+}
+.menu-fixed {
+	margin-top: 0;
+	position:fixed;
+	z-index:1000;
+	top:0;
+	background: #fff;
+	/*left:0;*/
+	/*Podemos hacer que el menu abarque el 100% al hacer scroll*/
+	width:100%;
+	
+}

@@ -1,0 +1,51 @@
+// widescreens
+@include mediaXl{
+}
+// desktops
+@include mediaLg{	
+}
+// tablets
+@include mediaMd{
+	#proyectos{
+		#background{
+			width: 100%;
+			float: left;
+		}
+	}
+
+	#about{
+		img{
+			width: 100%;
+			float: left;
+		}
+		#cont{
+			width: 100%;
+			float: left;
+		}
+	}
+	#contact{
+		margin-bottom: 40px;
+		.contacto{
+			top: 85px;
+		}
+	}
+	footer{
+		margin-top: 40px;
+	}
+}
+// Smartphone
+@include mediaSm{
+	#contact{
+		width: 100%;
+		margin-bottom: 40px;
+
+		.contacto{
+			top: 65px;
+
+			 ul li{
+			 	
+			 	position: relative;
+			 }
+		}
+	}	
+}
