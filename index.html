@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no, email=no, address=no">
+<title>Backroom — Write your next story</title>
+<meta name="description" content="Backroom bar in Buenos Aires and Santiago. Cocktails, food and live jazz.">
+<meta name="theme-color" content="#060302">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<script>
+/* critical: flag JS + decide synchronously (before first paint) if the intro runs this session */
+(function(){var d=document.documentElement;d.classList.add('js');try{if(!sessionStorage.getItem('bk-intro'))d.classList.add('has-intro')}catch(e){d.classList.add('has-intro')}})();
+</script>
+<link rel="preload" href="assets/fonts/Canela-Light.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="assets/fonts/SuisseIntl-Regular.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="assets/fonts/SuisseIntl-Book.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="intro" id="intro" aria-hidden="true">
+  <div class="intro__scene">
+    <svg viewBox="0 0 420 300" role="presentation" focusable="false">
+      <g transform="translate(210 168)">
+        <g class="glass glass--l"><g class="mv">
+          <clipPath id="clip-l"><path d="M-46.5 -60 C-43 -26,-39 20,-32.5 55 C-12 57.5,12 56.5,32.5 55.5 C38.5 20,42.5 -24,46.5 -62 Z"/></clipPath>
+          <g clip-path="url(#clip-l)"><g class="fill"><path class="wave" d="M-105.0 -26.00 L-100.0 -27.39 L-95.0 -28.50 L-90.0 -29.12 L-85.0 -29.12 L-80.0 -28.50 L-75.0 -27.39 L-70.0 -26.00 L-65.0 -24.61 L-60.0 -23.50 L-55.0 -22.88 L-50.0 -22.88 L-45.0 -23.50 L-40.0 -24.61 L-35.0 -26.00 L-30.0 -27.39 L-25.0 -28.50 L-20.0 -29.12 L-15.0 -29.12 L-10.0 -28.50 L-5.0 -27.39 L0.0 -26.00 L5.0 -24.61 L10.0 -23.50 L15.0 -22.88 L20.0 -22.88 L25.0 -23.50 L30.0 -24.61 L35.0 -26.00 L40.0 -27.39 L45.0 -28.50 L50.0 -29.12 L55.0 -29.12 L60.0 -28.50 L65.0 -27.39 L70.0 -26.00 L75.0 -24.61 L80.0 -23.50 L85.0 -22.88 L90.0 -22.88 L95.0 -23.50 L100.0 -24.61 L105.0 -26.00 V110 H-105 Z"/></g></g>
+          <path class="ln" pathLength="1" style="--k:0" d="M-50.5 -69 C-47 -31, -42.5 19, -36 69.5"/><path class="ln" pathLength="1" style="--k:1" d="M50 -70.5 C46.5 -28, 41 23, 36.5 70"/><path class="ln" pathLength="1" style="--k:2" d="M-36.5 70 C-14 73, 14 70.5, 36.5 70"/><path class="ln" pathLength="1" style="--k:3" d="M-51 -69.5 C-18 -72.5, 20 -68, 50.5 -70.5"/><path class="ln" pathLength="1" style="--k:4" d="M-45 -61.5 C-15 -64.5, 18 -60.5, 45 -63"/><path class="ln" pathLength="1" style="--k:5" d="M-32 55.5 C-12 58.5, 12 57, 32 56"/><path class="ln ln--hl" pathLength="1" style="--k:6" d="M-39 -42 C-37.5 -22, -35.5 -2, -33.5 17"/>
+        </g></g>
+        <g class="glass glass--r"><g class="mv">
+          <clipPath id="clip-r"><path d="M-46.5 -60 C-43 -26,-39 20,-32.5 55 C-12 57.5,12 56.5,32.5 55.5 C38.5 20,42.5 -24,46.5 -62 Z"/></clipPath>
+          <g clip-path="url(#clip-r)"><g class="fill"><path class="wave" d="M-105.0 -26.00 L-100.0 -27.39 L-95.0 -28.50 L-90.0 -29.12 L-85.0 -29.12 L-80.0 -28.50 L-75.0 -27.39 L-70.0 -26.00 L-65.0 -24.61 L-60.0 -23.50 L-55.0 -22.88 L-50.0 -22.88 L-45.0 -23.50 L-40.0 -24.61 L-35.0 -26.00 L-30.0 -27.39 L-25.0 -28.50 L-20.0 -29.12 L-15.0 -29.12 L-10.0 -28.50 L-5.0 -27.39 L0.0 -26.00 L5.0 -24.61 L10.0 -23.50 L15.0 -22.88 L20.0 -22.88 L25.0 -23.50 L30.0 -24.61 L35.0 -26.00 L40.0 -27.39 L45.0 -28.50 L50.0 -29.12 L55.0 -29.12 L60.0 -28.50 L65.0 -27.39 L70.0 -26.00 L75.0 -24.61 L80.0 -23.50 L85.0 -22.88 L90.0 -22.88 L95.0 -23.50 L100.0 -24.61 L105.0 -26.00 V110 H-105 Z"/></g></g>
+          <path class="ln" pathLength="1" style="--k:0" d="M-50 -70 C-46.5 -29, -41.5 21, -36.5 70"/><path class="ln" pathLength="1" style="--k:1" d="M50.5 -69 C47 -32, 42 18, 36 69.5"/><path class="ln" pathLength="1" style="--k:2" d="M-36.5 70 C-13 71.5, 14 73, 36.5 70"/><path class="ln" pathLength="1" style="--k:3" d="M-50.5 -70.5 C-19 -68, 19 -72.5, 51 -69.5"/><path class="ln" pathLength="1" style="--k:4" d="M-45 -63 C-16 -61, 17 -64.5, 45 -61.5"/><path class="ln" pathLength="1" style="--k:5" d="M-32 56 C-12 57, 12 58.5, 32 55.5"/><path class="ln ln--hl" pathLength="1" style="--k:6" d="M33.5 -40 C35 -20, 36.5 0, 38 19"/>
+        </g></g>
+        <g class="spark" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round">
+          <path pathLength="1" style="--k:0" d="M-6 -84 L-13 -99"/><path pathLength="1" style="--k:1" d="M0 -89 L1 -106"/><path pathLength="1" style="--k:2" d="M6.5 -84 L13 -99.5"/>
+          <path pathLength="1" style="--k:3" d="M-17 -75 L-30 -83"/><path pathLength="1" style="--k:4" d="M17.5 -75.5 L30 -82"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+  <p class="intro__title">It’s shot time</p>
+</div>
+
+<!-- Page atmosphere: warm glows (behind) + fixed overlay texture (above the glows, below all content) -->
+<div class="page-bg" aria-hidden="true">
+  <i class="glow" style="--x:1673;--y:2307;--s:568"></i>
+  <i class="glow" style="--x:-350;--y:4435;--s:568"></i>
+  <i class="glow" style="--x:510;--y:6702;--s:871"></i>
+  <i class="glow" style="--x:-412;--y:8889;--s:648"></i>
+  <i class="glow" style="--x:1539;--y:5476;--s:568"></i>
+  <i class="glow" style="--x:-235;--y:1353;--s:568"></i>
+  <i class="glow" style="--x:1677;--y:10188;--s:648"></i>
+  <i class="glow" style="--x:592;--y:11808;--s:735"></i>
+  <i class="glow" style="--x:1660;--y:13425;--s:500"></i>
+  <i class="glow" style="--x:-338;--y:14052;--s:500"></i>
+</div>
+<div class="bg-overlay" aria-hidden="true"></div>
+
+<a class="skip" href="#beginning">Skip to content</a>
+
+<!-- SVG sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-arrow-ur" viewBox="0 0 24 24"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></symbol>
+    <symbol id="i-circle-right" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m12 16 4-4-4-4"/><path d="M8 12h8"/></symbol>
+    <symbol id="i-circle-down" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v8"/><path d="m8 12 4 4 4-4"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-insta" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></symbol>
+    <symbol id="i-youtube" viewBox="0 0 24 24"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></symbol>
+    <symbol id="i-tiktok" viewBox="0 0 24 24"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+    <symbol id="i-chev-l" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+    <symbol id="i-chev-r" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 5v14"/><path d="M16 5v14"/></symbol>
+  </defs>
+</svg>
+
+<!-- ============ FIXED HEADER (progressive blur appears with scroll) ============ -->
+<header class="site-header" id="site-header" data-app>
+  <div class="site-header__bg" id="header-bg" aria-hidden="true">
+    <i class="pb pb--4"></i><i class="pb pb--3"></i><i class="pb pb--2"></i><i class="pb pb--1"></i><i class="pb-tint"></i>
+  </div>
+  <div class="nav wrap">
+    <a class="nav__logo anim-nav" href="#top" aria-label="Backroom — home"><img src="assets/logo-header.png" width="217" height="35" alt="Backroom"></a>
+
+    <nav class="nav__pill anim-nav" aria-label="Main">
+      <a href="#place">the place</a><i aria-hidden="true">/</i>
+      <a href="#experience">Experience</a><i aria-hidden="true">/</i>
+      <a href="#cocktails">menu</a><i aria-hidden="true">/</i>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav__right">
+      <div class="lang anim-nav" role="group" aria-label="Language">
+        <button type="button" class="lang__b" aria-pressed="true">EN</button><i aria-hidden="true">/</i><button type="button" class="lang__b" aria-pressed="false">es</button>
+      </div>
+      <span class="anim-nav nav__book"><button type="button" class="btn" data-book aria-haspopup="dialog"><span>book a table</span><svg class="ico" aria-hidden="true"><use href="#i-arrow-ur"/></svg></button></span>
+    </div>
+
+    <button class="nav__toggle anim-nav" type="button" aria-expanded="false" aria-controls="sheet"><span class="nav__toggle-l" data-no-i18n>Menu</span></button>
+  </div>
+</header>
+
+<!-- Mobile / tablet menu sheet -->
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-label="Menu" hidden>
+  <nav class="sheet__nav" aria-label="Mobile">
+    <a href="#place"><span>The place</span></a>
+    <a href="#experience"><span>Experience</span></a>
+    <a href="#cocktails"><span>Menu</span></a>
+    <a href="#contact"><span>Contact</span></a>
+  </nav>
+  <div class="sheet__foot"><button type="button" class="btn" data-book aria-haspopup="dialog"><span>book a table</span><svg class="ico" aria-hidden="true"><use href="#i-arrow-ur"/></svg></button></div>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top" aria-labelledby="hero-title" data-app>
+  <div class="hero__bg" data-parallax="0.12" aria-hidden="true"><img class="hero__img" src="assets/hero.webp" width="1920" height="1080" alt="" fetchpriority="high" decoding="async"></div>
+
+  <div class="hero__content wrap">
+    <div class="hero__text">
+      <p class="eyebrow eyebrow--gold anim-hero" style="--d:0">Buenos Aires <i class="sl" aria-hidden="true">/</i> Santiago</p>
+      <h1 class="hero__title" id="hero-title" data-split-words aria-label="Write your next story.">Write your next story.</h1>
+      <p class="eyebrow eyebrow--muted hero__tags anim-hero" style="--d:3">Jazz · Cocktails · Tapas</p>
+    </div>
+    <div class="hero__bottom">
+      <p class="hero__brand anim-hero" style="--d:4">backroom bar</p>
+      <a class="hero__scroll anim-hero" style="--d:5" href="#beginning"><svg class="ico ico--scroll" aria-hidden="true"><use href="#i-circle-down"/></svg><span>Scroll to explore</span></a>
+      <div class="hero__cta anim-hero" style="--d:6"><button type="button" class="btn" data-book aria-haspopup="dialog"><span>book a table</span><svg class="ico" aria-hidden="true"><use href="#i-arrow-ur"/></svg></button></div>
+    </div>
+  </div>
+</section>
+
+<main data-app>
+
+<!-- ============ THE BEGINNING ============ -->
+<section class="beginning wrap" id="beginning" aria-labelledby="beg-title">
+  <div class="beginning__head" data-reveal-group>
+    <div class="label-row" data-reveal>
+      <span class="eyebrow eyebrow--gold">Backroom bar</span>
+      <span class="rule" aria-hidden="true"></span>
+      <span class="eyebrow eyebrow--muted">Buenos Aires <i class="sl" aria-hidden="true">/</i> Santiago</span>
+    </div>
+    <h2 class="display beginning__title" id="beg-title" data-reveal>Good stories begin with a meeting.</h2>
+  </div>
+  <div class="beginning__desc" data-reveal-group>
+    <span class="vline" aria-hidden="true" data-reveal></span>
+    <p class="lead" data-reveal>A place where cocktails, food and live jazz come together for an experience that lingers long after the last drink.</p>
+  </div>
+</section>
+
+<!-- ============ THE PLACE ============ -->
+<section class="place wrap" id="place" aria-labelledby="place-title">
+  <div class="place__img1 media" data-reveal-group><div class="media__in" data-reveal><img src="assets/place-1.webp" width="800" height="800" loading="lazy" decoding="async" alt="The Backroom sign glowing above a wall of bottles"></div></div>
+  <div class="place__right">
+    <div class="place__desc" data-reveal-group>
+      <div class="place__title">
+        <p class="eyebrow eyebrow--gold" data-reveal>A place to stay awhile</p>
+        <h2 class="display" id="place-title" data-reveal>The place.</h2>
+      </div>
+      <p class="lead place__lead" data-reveal>Some places aren’t meant to be explained. They’re discovered, one conversation at a time.</p>
+    </div>
+    <div class="place__img2 media" data-reveal-group><div class="media__in" data-reveal><img src="assets/place-2.webp" width="524" height="524" loading="lazy" decoding="async" alt="Warmly lit shelves of spirits behind the bar"></div></div>
+  </div>
+</section>
+
+<!-- ============ THE EXPERIENCE (auto-rotating) ============ -->
+<section class="exp" id="experience" aria-labelledby="exp-title">
+  <div class="wrap exp__inner">
+    <div class="exp__head" data-reveal-group>
+      <div class="exp__headtext">
+        <p class="eyebrow eyebrow--gold" data-reveal>The experience</p>
+        <h2 class="display" id="exp-title" data-reveal>Come for the first round.</h2>
+      </div>
+      <p class="lead" data-reveal>Four ways into the night. Begin with a drink, linger for the music, gather around the table, leave with a story.</p>
+    </div>
+
+    <div class="exp__feature" data-reveal-group>
+      <ul class="exp__list" role="list" data-reveal>
+        <li><a class="exp__item" href="#cocktails" data-exp="0"><span class="exp__arrow" aria-hidden="true"><svg class="ico-xl"><use href="#i-circle-right"/></svg></span><span class="exp__name">Cocktails</span><span class="exp__num"><span>01</span><svg class="ico ico--sm" aria-hidden="true"><use href="#i-arrow-ur"/></svg></span></a></li>
+        <li><a class="exp__item" href="#jazz" data-exp="1"><span class="exp__arrow" aria-hidden="true"><svg class="ico-xl"><use href="#i-circle-right"/></svg></span><span class="exp__name">Jazz</span><span class="exp__num"><span>02</span><svg class="ico ico--sm" aria-hidden="true"><use href="#i-arrow-ur"/></svg></span></a></li>
+        <li><a class="exp__item" href="#tapas" data-exp="2"><span class="exp__arrow" aria-hidden="true"><svg class="ico-xl"><use href="#i-circle-right"/></svg></span><span class="exp__name">Tapas</span><span class="exp__num"><span>03</span><svg class="ico ico--sm" aria-hidden="true"><use href="#i-arrow-ur"/></svg></span></a></li>
+        <li><a class="exp__item" href="#gallery" data-exp="3"><span class="exp__arrow" aria-hidden="true"><svg class="ico-xl"><use href="#i-circle-right"/></svg></span><span class="exp__name">The Night</span><span class="exp__num"><span>04</span><svg class="ico ico--sm" aria-hidden="true"><use href="#i-arrow-ur"/></svg></span></a></li>
+      </ul>
+      <div class="exp__media media" data-reveal>
+        <div class="exp__stack">
+          <img class="is-active" src="assets/exp-1.webp" width="660" height="690" alt="A red cocktail in a stemmed glass" loading="eager" decoding="async">
+          <img src="assets/exp-2.webp" width="660" height="690" alt="A bassist playing in blue light" loading="lazy" decoding="async">
+          <img src="assets/exp-3.webp" width="660" height="690" alt="A dark bowl of crispy tapas with a creamy dip" loading="lazy" decoding="async">
+          <img src="assets/exp-4.webp" width="660" height="690" alt="Guests sharing a candle-lit table at the bar" loading="lazy" decoding="async">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CARDS ============ -->
+<section class="cards wrap" id="menu" aria-label="Cocktails and tapas">
+  <article class="card card--a" id="cocktails">
+    <div class="card__img media" data-reveal-group><div class="media__in" data-reveal><img src="assets/card-1.webp" width="796" height="818" loading="lazy" decoding="async" alt="A copper Backroom mug with mint and lime"></div></div>
+    <div class="card__text" data-reveal-group>
+      <div class="label-row" data-reveal>
+        <span class="eyebrow eyebrow--gold">Backroom bar</span><i class="sl" aria-hidden="true">/</i><span class="eyebrow eyebrow--muted">Cocktails</span>
+      </div>
+      <h2 class="display card__title" data-reveal>The art of a drink.</h2>
+      <p class="lead card__lead" data-reveal>Every cocktail is the beginning of a story you don’t know how to tell yet.</p>
+      <div class="card__cta" data-reveal><a class="btn btn--tight" href="#">explore the menu<svg class="ico" aria-hidden="true"><use href="#i-arrow-ur"/></svg></a></div>
+    </div>
+  </article>
+
+  <article class="card card--b" id="tapas">
+    <div class="card__text" data-reveal-group>
+      <div class="label-row" data-reveal>
+        <span class="eyebrow eyebrow--gold">Backroom bar</span><i class="sl" aria-hidden="true">/</i><span class="eyebrow eyebrow--muted">Mediterranean tapas</span>
+      </div>
+      <h2 class="display card__title" data-reveal>To share. To remember.</h2>
+      <p class="lead card__lead" data-reveal>Mediterranean flavors that make you want to stay a little longer.</p>
+      <div class="card__cta" data-reveal><a class="btn btn--tight" href="#">explore the menu<svg class="ico" aria-hidden="true"><use href="#i-arrow-ur"/></svg></a></div>
+    </div>
+    <div class="card__img media" data-reveal-group><div class="media__in" data-reveal><img src="assets/card-2.webp" width="796" height="818" loading="lazy" decoding="async" alt="Crispy fried bites with herbs and a creamy sauce"></div></div>
+  </article>
+</section>
+
+<!-- ============ THE SOUND OF BACKROOM ============ -->
+<section class="jazz" id="jazz" aria-labelledby="jazz-title">
+  <div class="bgfill" aria-hidden="true"><img src="assets/jazz-bg.webp" width="1920" height="1080" alt="" loading="lazy" decoding="async" data-parallax="0.1"></div>
+  <div class="wrap jazz__inner" data-reveal-group>
+    <div class="jazz__text">
+      <p class="eyebrow eyebrow--gold" data-reveal>The sound of Backroom</p>
+      <h2 class="display jazz__title" id="jazz-title" data-reveal>Jazz.</h2>
+      <p class="jazz__sub" data-reveal>When the night finds its rhythm.</p>
+      <p class="lead jazz__lead" data-reveal>Live jazz sets the unexpected to music.</p>
+    </div>
+    <div class="jazz__viz" data-reveal>
+      <canvas class="jazz__canvas" id="viz" width="227" height="127" aria-hidden="true" data-audio="assets/audio/backroom-jazz.mp3"></canvas>
+      <button type="button" class="jazz__play" id="viz-play" hidden aria-pressed="false" aria-label="Play jazz"><svg class="ico" aria-hidden="true"><use href="#i-play"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ IN THE MEDIA ============ -->
+<section class="media-sec wrap" id="media" aria-labelledby="media-title">
+  <div class="media-sec__head" data-reveal-group>
+    <span class="hline" aria-hidden="true" data-reveal></span>
+    <div class="media-sec__title">
+      <p class="eyebrow eyebrow--gold" data-reveal>In the media</p>
+      <h2 class="display" id="media-title" data-reveal>The night has a voice.</h2>
+    </div>
+  </div>
+  <div class="news" data-reveal-group>
+    <ul class="news__list" role="list">
+      <li class="news__row" data-reveal data-photo="0"><a class="news__link" href="https://buenosbares.com/veinte-formas-de-expresion-una-nueva-carta-backroom-recorre-la-historia-del-arte-a-traves-de-la-cocteleria" target="_blank" rel="noopener noreferrer">
+        <span class="news__src">Buenos Bares / 2026</span>
+        <span class="news__title"><span class="news__arrow" aria-hidden="true"><svg class="ico-xl"><use href="#i-circle-right"/></svg></span><span class="news__text">Twenty ways of expression, a new menu</span></span>
+        <span class="news__out" aria-hidden="true"><svg class="ico ico--md"><use href="#i-arrow-ur"/></svg></span>
+        <span class="sr-only">(opens in a new tab)</span>
+      </a></li>
+      <li class="news__row" data-reveal data-photo="1"><a class="news__link" href="https://bar-drinks.ar/de-palermo-soho-a-santiago-sin-escalas-el-1er-bar-argentino-que-cruzo-la-cordillera" target="_blank" rel="noopener noreferrer">
+        <span class="news__src">Bar an Drinks / 2025</span>
+        <span class="news__title"><span class="news__arrow" aria-hidden="true"><svg class="ico-xl"><use href="#i-circle-right"/></svg></span><span class="news__text">From Palermo Soho to Santiago, non-stop</span></span>
+        <span class="news__out" aria-hidden="true"><svg class="ico ico--md"><use href="#i-arrow-ur"/></svg></span>
+        <span class="sr-only">(opens in a new tab)</span>
+      </a></li>
+      <li class="news__row" data-reveal data-photo="2"><a class="news__link" href="https://elcronista-el-cronista-prod.web.arc-cdn.net/clase/gourmet/buenos-aires-2022-es-uno-de-los-pocos-bares-que-combina-libros-jazz-y-gastronomia-y-solo-se-accede-con-reserva-previa/" target="_blank" rel="noopener noreferrer">
+        <span class="news__src">El Cronista / 2022</span>
+        <span class="news__title"><span class="news__arrow" aria-hidden="true"><svg class="ico-xl"><use href="#i-circle-right"/></svg></span><span class="news__text">A meeting of books, jazz and gastronomy</span></span>
+        <span class="news__out" aria-hidden="true"><svg class="ico ico--md"><use href="#i-arrow-ur"/></svg></span>
+        <span class="sr-only">(opens in a new tab)</span>
+      </a></li>
+    </ul>
+    <div class="news__pop" aria-hidden="true"><div class="news__frame"><img data-src="assets/media-1.webp" alt="" width="488" height="543" decoding="async"><img data-src="assets/media-2.webp" alt="" width="488" height="543" decoding="async"><img data-src="assets/media-3.webp" alt="" width="488" height="543" decoding="async"></div></div>
+  </div>
+</section>
+
+<!-- ============ AFTER DARK (GALLERY) ============ -->
+<section class="gal" id="gallery" aria-labelledby="gal-title">
+  <div class="wrap gal__head" data-reveal-group>
+    <div class="gal__meta" data-reveal>
+      <p class="eyebrow eyebrow--gold">After dark</p>
+      <p class="eyebrow eyebrow--muted">Buenos Aires · Santiago</p>
+    </div>
+    <h2 class="display" id="gal-title" data-reveal>When the city sleeps.</h2>
+  </div>
+
+  <div class="gal__body" data-reveal-group>
+    <div class="wrap gal__tabswrap" data-reveal>
+      <div class="gal__tabs" role="tablist" aria-label="Filter photos by city">
+        <button class="gal__tab is-active" role="tab" id="tab-all" aria-selected="true" aria-controls="gal-view" data-filter="all"><svg class="ico ico--tab" aria-hidden="true"><use href="#i-circle-right"/></svg><span>all photos</span></button>
+        <button class="gal__tab" role="tab" id="tab-argentina" aria-selected="false" aria-controls="gal-view" tabindex="-1" data-filter="argentina"><svg class="ico ico--tab" aria-hidden="true"><use href="#i-circle-right"/></svg><span>argentina</span></button>
+        <button class="gal__tab" role="tab" id="tab-chile" aria-selected="false" aria-controls="gal-view" tabindex="-1" data-filter="chile"><svg class="ico ico--tab" aria-hidden="true"><use href="#i-circle-right"/></svg><span>chile</span></button>
+      </div>
+    </div>
+
+    <div class="gal__stage" data-reveal>
+      <div class="gal__viewport" id="gal-view" role="tabpanel" aria-labelledby="tab-all" aria-roledescription="carousel" aria-label="After dark photo gallery" tabindex="0">
+        <div class="gal__track">
+          <figure class="gal__card" data-cat="argentina" data-lg="assets/ad-ar-1-lg.webp" data-th="assets/ad-ar-1-th.webp"><button type="button" class="gal__open" aria-haspopup="dialog"><span class="gal__media"><img src="assets/ad-ar-1.webp" width="524" height="524" alt="A plated dish with fresh herbs on a ceramic plate" loading="lazy" decoding="async" draggable="false"></span></button><figcaption class="gal__cap"></figcaption></figure>
+          <figure class="gal__card" data-cat="argentina" data-lg="assets/ad-ar-2-lg.webp" data-th="assets/ad-ar-2-th.webp"><button type="button" class="gal__open" aria-haspopup="dialog"><span class="gal__media"><img src="assets/ad-ar-2.webp" width="524" height="524" alt="A bartender finishing a cocktail in a coupe glass" loading="lazy" decoding="async" draggable="false"></span></button><figcaption class="gal__cap"></figcaption></figure>
+          <figure class="gal__card" data-cat="argentina" data-lg="assets/ad-ar-3-lg.webp" data-th="assets/ad-ar-3-th.webp"><button type="button" class="gal__open" aria-haspopup="dialog"><span class="gal__media"><img src="assets/ad-ar-3.webp" width="524" height="524" alt="Guests at a candle-lit table beside a warm wall lamp" loading="lazy" decoding="async" draggable="false"></span></button><figcaption class="gal__cap"></figcaption></figure>
+          <figure class="gal__card" data-cat="argentina" data-lg="assets/ad-ar-4-lg.webp" data-th="assets/ad-ar-4-th.webp"><button type="button" class="gal__open" aria-haspopup="dialog"><span class="gal__media"><img src="assets/ad-ar-4.webp" width="524" height="524" alt="The Backroom sign above the bar with stained glass" loading="lazy" decoding="async" draggable="false"></span></button><figcaption class="gal__cap"></figcaption></figure>
+          <figure class="gal__card" data-cat="argentina" data-lg="assets/ad-ar-5-lg.webp" data-th="assets/ad-ar-5-th.webp"><button type="button" class="gal__open" aria-haspopup="dialog"><span class="gal__media"><img src="assets/ad-ar-5.webp" width="524" height="524" alt="Guests chatting at candle-lit tables" loading="lazy" decoding="async" draggable="false"></span></button><figcaption class="gal__cap"></figcaption></figure>
+          <figure class="gal__card" data-cat="argentina" data-lg="assets/ad-ar-6-lg.webp" data-th="assets/ad-ar-6-th.webp"><button type="button" class="gal__open" aria-haspopup="dialog"><span class="gal__media"><img src="assets/ad-ar-6.webp" width="524" height="524" alt="The glowing Backroom sign above a wall of bottles" loading="lazy" decoding="async" draggable="false"></span></button><figcaption class="gal__cap"></figcaption></figure>
+          <figure class="gal__card" data-cat="chile" data-lg="assets/ad-cl-1-lg.webp" data-th="assets/ad-cl-1-th.webp"><button type="button" class="gal__open" aria-haspopup="dialog"><span class="gal__media"><img src="assets/ad-cl-1.webp" width="524" height="524" alt="A bartender smiling behind the counter" loading="lazy" decoding="async" draggable="false"></span></button><figcaption class="gal__cap"></figcaption></figure>
+          <figure class="gal__card" data-cat="chile" data-lg="assets/ad-cl-2-lg.webp" data-th="assets/ad-cl-2-th.webp"><button type="button" class="gal__open" aria-haspopup="dialog"><span class="gal__media"><img src="assets/ad-cl-2.webp" width="524" height="524" alt="Two friends laughing at a candle-lit table" loading="lazy" decoding="async" draggable="false"></span></button><figcaption class="gal__cap"></figcaption></figure>
+          <figure class="gal__card" data-cat="chile" data-lg="assets/ad-cl-3-lg.webp" data-th="assets/ad-cl-3-th.webp"><button type="button" class="gal__open" aria-haspopup="dialog"><span class="gal__media"><img src="assets/ad-cl-3.webp" width="524" height="524" alt="Toasted bread topped with a seasoned bite and garnish" loading="lazy" decoding="async" draggable="false"></span></button><figcaption class="gal__cap"></figcaption></figure>
+          <figure class="gal__card" data-cat="chile" data-lg="assets/ad-cl-4-lg.webp" data-th="assets/ad-cl-4-th.webp"><button type="button" class="gal__open" aria-haspopup="dialog"><span class="gal__media"><img src="assets/ad-cl-4.webp" width="524" height="524" alt="A long table full of guests under hanging lamps" loading="lazy" decoding="async" draggable="false"></span></button><figcaption class="gal__cap"></figcaption></figure>
+          <figure class="gal__card" data-cat="chile" data-lg="assets/ad-cl-5-lg.webp" data-th="assets/ad-cl-5-th.webp"><button type="button" class="gal__open" aria-haspopup="dialog"><span class="gal__media"><img src="assets/ad-cl-5.webp" width="524" height="524" alt="Small plates and a martini on a black slate" loading="lazy" decoding="async" draggable="false"></span></button><figcaption class="gal__cap"></figcaption></figure>
+          <figure class="gal__card" data-cat="chile" data-lg="assets/ad-cl-6-lg.webp" data-th="assets/ad-cl-6-th.webp"><button type="button" class="gal__open" aria-haspopup="dialog"><span class="gal__media"><img src="assets/ad-cl-6.webp" width="524" height="524" alt="A guest at a candle-lit table with a glass of red wine" loading="lazy" decoding="async" draggable="false"></span></button><figcaption class="gal__cap"></figcaption></figure>
+        </div>
+      </div>
+      <div class="gal__dots"><div class="gal__dotsin" role="group" aria-label="Choose photo"></div></div>
+      <p class="sr-only" id="gal-live" aria-live="polite"></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ THE NEXT SCENE ============ -->
+<section class="book" id="book" aria-labelledby="book-title">
+  <div class="bgfill" aria-hidden="true"><img src="assets/next-bg.webp" width="1920" height="1080" alt="" loading="lazy" decoding="async" data-parallax="0.1"></div>
+  <img class="book__splash" src="assets/splash.webp" alt="" aria-hidden="true" loading="lazy" decoding="async">
+  <div class="wrap book__inner" data-reveal-group>
+    <p class="eyebrow eyebrow--gold" data-reveal>The next scene</p>
+    <h2 class="display display--xl book__title" id="book-title" data-reveal>Your next story starts here.</h2>
+    <div class="book__cta" data-reveal><button type="button" class="btn" data-book aria-haspopup="dialog"><span>book a table</span><svg class="ico" aria-hidden="true"><use href="#i-arrow-ur"/></svg></button></div>
+  </div>
+</section>
+
+<!-- ============ VISIT ============ -->
+<section class="visit" id="visit" aria-labelledby="visit-title">
+  <div class="wrap visit__head" data-reveal-group>
+    <span class="hline" aria-hidden="true" data-reveal></span>
+    <div class="visit__title">
+      <p class="eyebrow eyebrow--gold" data-reveal>Visit Backroom</p>
+      <h2 class="display" id="visit-title" data-reveal>Two cities. One night.</h2>
+    </div>
+  </div>
+
+  <div class="visit__grid">
+    <article class="vp vp--ar" aria-labelledby="vp-ar" data-vp>
+      <div class="vp__bg" aria-hidden="true"><div class="vp__zoom"><img src="assets/visit-ar.webp" width="950" height="800" alt="" loading="lazy" decoding="async"></div></div>
+      <div class="vp__info">
+        <div class="vp__shift">
+          <h3 class="vp__name" id="vp-ar">Argentina</h3>
+          <div class="vp__cols">
+            <div class="vp__col">
+              <p class="eyebrow eyebrow--muted">address</p>
+              <p class="vp__addr"><span>Jorge Luis Borges 1975</span><span>Buenos Aires (CABA)</span></p>
+            </div>
+            <div class="vp__col">
+              <p class="eyebrow eyebrow--muted">hours</p>
+              <div class="vp__hours"><span class="vp__ind" aria-hidden="true"></span>
+                <dl>
+                  <div><dt>Monday to Friday</dt><dd>15:00 — 05:00</dd></div>
+                  <div><dt>Saturday and Sunday</dt><dd>12:00 — 05:00</dd></div>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div class="vp__btns">
+            <a class="btn" href="https://maps.app.goo.gl/ybUZ8zWxLHF9zewf8" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg><span>Get directions</span><span class="sr-only">(opens in a new tab)</span></a>
+            <a class="btn btn--ghost" href="https://backroom.meitre.com/" target="_blank" rel="noopener noreferrer"><span>Book a table</span><svg class="ico" aria-hidden="true"><use href="#i-arrow-ur"/></svg><span class="sr-only">(opens in a new tab)</span></a>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="vp vp--cl" aria-labelledby="vp-cl" data-vp>
+      <div class="vp__bg" aria-hidden="true"><div class="vp__zoom"><img src="assets/visit-cl.webp" width="950" height="800" alt="" loading="lazy" decoding="async"></div></div>
+      <div class="vp__info">
+        <div class="vp__shift">
+          <h3 class="vp__name" id="vp-cl">Chile</h3>
+          <div class="vp__cols">
+            <div class="vp__col">
+              <p class="eyebrow eyebrow--muted">address</p>
+              <p class="vp__addr"><span>Pérez Valenzuela 1470</span><span>Providencia, Santiago</span></p>
+            </div>
+            <div class="vp__col">
+              <p class="eyebrow eyebrow--muted">hours</p>
+              <div class="vp__hours"><span class="vp__ind" aria-hidden="true"></span>
+                <dl>
+                  <div><dt>Monday to Friday</dt><dd>18:00 — 04:00</dd></div>
+                  <div><dt>Saturday and Sunday</dt><dd>19:00 — 04:00</dd></div>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div class="vp__btns">
+            <a class="btn" href="https://maps.app.goo.gl/W2rN2W1uwG7jGCH88" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg><span>Get directions</span><span class="sr-only">(opens in a new tab)</span></a>
+            <a class="btn btn--ghost" href="https://backroom-chile.meitre.com/" target="_blank" rel="noopener noreferrer"><span>Book a table</span><svg class="ico" aria-hidden="true"><use href="#i-arrow-ur"/></svg><span class="sr-only">(opens in a new tab)</span></a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ WORK WITH US ============ -->
+<section class="work" id="work" aria-labelledby="work-title">
+  <div class="wrap work__inner" data-reveal-group>
+    <div class="work__left">
+      <p class="eyebrow eyebrow--gold" data-reveal>Work with us</p>
+      <h2 class="display" id="work-title" data-split-words aria-label="Be part of the story.">Be part of the story.</h2>
+    </div>
+    <div class="work__right">
+      <span class="hline hline--draw" aria-hidden="true" data-reveal></span>
+      <p class="lead work__lead" data-reveal>If hospitality, cocktails, food or music are your thing, we’d love to meet you. Send us your resume and tell us which city you’d like to work in.</p>
+      <div class="work__contact">
+        <div data-reveal><a class="btn btn--tight" href="mailto:rrhh@backroom-bar.com">send the resume<svg class="ico" aria-hidden="true"><use href="#i-arrow-ur"/></svg></a></div>
+        <div data-reveal><span class="work__mail" translate="no">rrhh@backroom-bar.com</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="foot wrap" id="contact" data-app>
+  <div class="foot__box" data-reveal-group>
+    <span class="foot__rule foot__rule--t" aria-hidden="true"></span>
+    <span class="foot__rule foot__rule--b" aria-hidden="true"></span>
+    <div class="foot__left" data-reveal>
+      <p class="foot__en">Write your next story.</p>
+      <p class="foot__es">Escribí tu próxima historia.</p>
+    </div>
+    <img class="foot__logo" data-reveal src="assets/logo-footer.png" width="555" height="246" alt="Backroom — bar de autores &amp; tragos" loading="lazy" decoding="async">
+    <ul class="foot__social" role="list" aria-label="Social media">
+      <li data-reveal><a class="soc" href="https://www.instagram.com/backroom.bar" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-insta"/></svg></a></li>
+      <li data-reveal><a class="soc" href="https://www.youtube.com/@Backroom_Bar" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-youtube"/></svg></a></li>
+      <li data-reveal><a class="soc" href="https://www.tiktok.com/@backroom.bar" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-tiktok"/></svg></a></li>
+    </ul>
+  </div>
+  <div class="foot__links" data-reveal-group>
+    <p class="foot__cities" data-reveal><a class="ulink" href="#visit">Buenos Aires</a> <i class="sl" aria-hidden="true">/</i> <a class="ulink" href="#visit">Santiago</a></p>
+    <p class="foot__copy" data-reveal>© 2026 BACKROOM. All rights reserved.</p>
+    <div class="lang foot__lang" data-reveal role="group" aria-label="Language"><button type="button" class="lang__b" aria-pressed="true">EN</button><i aria-hidden="true">/</i><button type="button" class="lang__b" aria-pressed="false">es</button></div>
+  </div>
+</footer>
+
+<!-- ============ BOOK A TABLE POPUP ============ -->
+<div class="modal" id="book-modal" role="dialog" aria-modal="true" aria-labelledby="book-modal-title" hidden>
+  <div class="modal__backdrop" data-close></div>
+  <div class="modal__panel">
+    <button type="button" class="modal__x" data-close aria-label="Close"><svg class="ico" aria-hidden="true"><use href="#i-x"/></svg></button>
+    <p class="eyebrow eyebrow--gold">Reservations</p>
+    <h2 class="display modal__title" id="book-modal-title">Book a table.</h2>
+    <p class="lead modal__lead">Choose your city.</p>
+    <ul class="modal__list" role="list">
+      <li><a class="modal__cta" href="https://backroom.meitre.com/" target="_blank" rel="noopener noreferrer"><span>Buenos Aires, Argentina</span><svg class="ico ico--md" aria-hidden="true"><use href="#i-arrow-ur"/></svg><span class="sr-only">(opens in a new tab)</span></a></li>
+      <li><a class="modal__cta" href="https://backroom-chile.meitre.com/" target="_blank" rel="noopener noreferrer"><span>Santiago, Chile</span><svg class="ico ico--md" aria-hidden="true"><use href="#i-arrow-ur"/></svg><span class="sr-only">(opens in a new tab)</span></a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- ============ GALLERY LIGHTBOX ============ -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo gallery" hidden>
+  <div class="lb__backdrop" aria-hidden="true"></div>
+  <div class="lb__top">
+    <p class="lb__label" id="lb-label"></p>
+    <p class="lb__count" aria-live="polite"><span class="lb__cur">01</span><span class="lb__sep"> / </span><span class="lb__tot">01</span></p>
+    <button type="button" class="lb__x" aria-label="Close"><svg class="ico" aria-hidden="true"><use href="#i-x"/></svg></button>
+  </div>
+  <div class="lb__stage">
+    <button type="button" class="lb__nav lb__nav--prev" aria-label="Previous photo"><svg class="ico" aria-hidden="true"><use href="#i-chev-l"/></svg></button>
+    <div class="lb__frame"></div>
+    <button type="button" class="lb__nav lb__nav--next" aria-label="Next photo"><svg class="ico" aria-hidden="true"><use href="#i-chev-r"/></svg></button>
+  </div>
+  <div class="lb__thumbs"><div class="lb__thumbs-in"></div></div>
+</div>
+
+<!-- custom cursor (fine pointers only) -->
+<div class="cursor" id="cursor" aria-hidden="true"><div class="cursor__dot"></div><span class="cursor__label">view</span></div>
+
+<script src="js/intro.js" defer></script>
+<script src="js/main.js" defer></script>
+<script src="js/modals.js" defer></script>
+<script src="js/cursor.js" defer></script>
+<script src="js/visualizer.js" defer></script>
+</body>
+</html>
